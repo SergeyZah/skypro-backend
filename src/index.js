@@ -17,7 +17,7 @@ const server = http.createServer((request, response) => {
     response.status = 200;
     response.statusMessage = "Ok";
     response.headers = "Content-Type: text/plain";
-    response.write(`Hello, ${userName}`);
+    response.write(`Hello, ${userName}!`);
     response.end();
 
     return;
@@ -42,7 +42,6 @@ const server = http.createServer((request, response) => {
     response.write("");
     response.end();
   }
-
   
 });
 
