@@ -21,7 +21,7 @@ const server = http.createServer((request, response) => {
     response.end();
 
     return;
-  } else if (request.url === "/?hello") {
+  } else if (request.url === "/?hello" || request.url === "/?hello=") {
     response.statusCode = 400;
     response.statusMessage = "Bad request";
     response.headers = "Content-Type: text/plain";
